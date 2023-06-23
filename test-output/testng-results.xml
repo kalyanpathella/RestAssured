@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[Unsuccefull creation of new customer]]>
+    </line>
+    <line>
+      <![CDATA[Unsuccefull retrieval of new customer]]>
+    </line>
+    <line>
+      <![CDATA[Unsuccefull updated of new customer]]>
+    </line>
+    <line>
+      <![CDATA[new customer found in existing customers list]]>
+    </line>
+    <line>
+      <![CDATA[Successfull deletion of new customer]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8041" started-at="2023-04-20T13:24:09 IST" finished-at="2023-04-20T13:24:17 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8041" started-at="2023-04-20T13:24:09 IST" finished-at="2023-04-20T13:24:17 IST">
+      <class name="stripe.Api.StripeCom">
+        <test-method status="PASS" signature="createCustomer()[pri:0, instance:stripe.Api.StripeCom@17579e0f]" name="createCustomer" duration-ms="3980" started-at="2023-04-20T13:24:09 IST" finished-at="2023-04-20T13:24:13 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Unsuccefull creation of new customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createCustomer -->
+        <test-method status="PASS" signature="retriveCustomer()[pri:1, instance:stripe.Api.StripeCom@17579e0f]" name="retriveCustomer" duration-ms="943" started-at="2023-04-20T13:24:13 IST" depends-on-methods="stripe.Api.StripeCom.createCustomer" finished-at="2023-04-20T13:24:14 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Unsuccefull retrieval of new customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- retriveCustomer -->
+        <test-method status="PASS" signature="updateCustomer()[pri:2, instance:stripe.Api.StripeCom@17579e0f]" name="updateCustomer" duration-ms="987" started-at="2023-04-20T13:24:14 IST" depends-on-methods="stripe.Api.StripeCom.createCustomer" finished-at="2023-04-20T13:24:15 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Unsuccefull updated of new customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- updateCustomer -->
+        <test-method status="PASS" signature="getAllCustomers()[pri:3, instance:stripe.Api.StripeCom@17579e0f]" name="getAllCustomers" duration-ms="1003" started-at="2023-04-20T13:24:15 IST" finished-at="2023-04-20T13:24:16 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[new customer found in existing customers list]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAllCustomers -->
+        <test-method status="PASS" signature="getSpecificCustomer()[pri:4, instance:stripe.Api.StripeCom@17579e0f]" name="getSpecificCustomer" duration-ms="0" started-at="2023-04-20T13:24:16 IST" finished-at="2023-04-20T13:24:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSpecificCustomer -->
+        <test-method status="PASS" signature="deleteCustomer()[pri:5, instance:stripe.Api.StripeCom@17579e0f]" name="deleteCustomer" duration-ms="1078" started-at="2023-04-20T13:24:16 IST" finished-at="2023-04-20T13:24:17 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Successfull deletion of new customer]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteCustomer -->
+      </class> <!-- stripe.Api.StripeCom -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
